@@ -611,7 +611,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Transition.To>
-                      <State x:Name="__ReferenceID5" sap2010:Annotation.AnnotationText="" DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="771,1056" sap2010:WorkflowViewState.IdRef="State_5">
+                      <State x:Name="__ReferenceID5" sap2010:Annotation.AnnotationText="" DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="237,93" sap2010:WorkflowViewState.IdRef="State_5">
                         <State.Entry>
                           <StateMachine InitialState="{x:Reference __ReferenceID3}" DisplayName="State Machine" sap:VirtualizedContainerService.HintSize="725,637" sap2010:WorkflowViewState.IdRef="StateMachine_1">
                             <sap:WorkflowViewStateService.ViewState>
@@ -624,11 +624,11 @@
                                 <av:PointCollection x:Key="ConnectorLocation">190,77.6 190,107.6 188.84,107.6 188.84,127.6</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Recorre la tabla y realiza gestión necesaria para cada fila." DisplayName="Bloque Actividad 1" sap:VirtualizedContainerService.HintSize="676,2326" sap2010:WorkflowViewState.IdRef="State_2">
+                            <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Recorre la tabla y realiza gestión necesaria para cada fila." DisplayName="Bloque Actividad 1" sap:VirtualizedContainerService.HintSize="676,2732" sap2010:WorkflowViewState.IdRef="State_2">
                               <State.Entry>
-                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,1907" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,2313" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                   <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="592,1679" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="592,2085" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="sd:DataTable" Name="dtTemporal" />
                                       </Sequence.Variables>
@@ -793,13 +793,13 @@
                                         <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[carpeta]" />
                                       </Sequence>
                                       <ui:BuildDataTable DataTable="[dtTemporal]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="530,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Nombre_x0020_Proyecto&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Tipo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Codigo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Descripcion&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Presupuesto&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtFinal]" DisplayName="Recorre la tabla final 'dtFinal' para crear los ficheros" sap:VirtualizedContainerService.HintSize="530,844" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtFinal]" DisplayName="Recorre la tabla final 'dtFinal' para crear los ficheros" sap:VirtualizedContainerService.HintSize="530,1118" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                                         <ui:ForEachRow.Body>
                                           <ActivityAction x:TypeArguments="sd:DataRow">
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,722" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,997" sap2010:WorkflowViewState.IdRef="Sequence_50">
                                               <Sequence.Variables>
                                                 <Variable x:TypeArguments="x:String" Name="nombreFichero" />
                                                 <Variable x:TypeArguments="x:Boolean" Name="ficheroCreado" />
@@ -809,7 +809,7 @@
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_56">
+                                              <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_56">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[nombreFichero]</OutArgument>
                                                 </Assign.To>
@@ -820,6 +820,8 @@
                                               <ui:CreateFile ContinueOnError="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[nombreFichero+&quot;.xlsx&quot;]" Path="[carpeta]" />
                                               <ui:PathExists DisplayName="Path Exists" Exists="[ficheroCreado]" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[carpeta+&quot;\&quot;+nombreFichero + &quot;.xlsx&quot;]" PathType="File" />
                                               <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString,CurrentRow(1).ToString,CurrentRow(2).ToString,CurrentRow(3).ToString,CurrentRow(4).ToString}]" DataTable="[dtTemporal]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                              <ui:WriteRange AddHeaders="False" DataTable="[dtTemporal]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Hoja1" StartingCell="A1" WorkbookPath="[carpeta+&quot;\&quot;+nombreFichero + &quot;.xlsx&quot;]" />
+                                              <ui:ClearDataTable DataTable="[dtTemporal]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
                                             </Sequence>
                                           </ActivityAction>
                                         </ui:ForEachRow.Body>
@@ -832,6 +834,7 @@
                                           <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                         </Assign.Value>
                                       </Assign>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;Fecheros creados correctamente en la carpeta de hoy &quot;]" />
                                     </Sequence>
                                   </TryCatch.Try>
                                   <TryCatch.Catches>
@@ -846,7 +849,7 @@
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                         </ActivityAction.Argument>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="496,307" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="496,315" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
