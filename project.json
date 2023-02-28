@@ -1,6 +1,6 @@
 {
   "name": "Proyectos",
-  "description": "Proceso que sirve de plantilla de reframwork",
+  "description": "Ejercicio",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
