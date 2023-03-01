@@ -74,7 +74,6 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Traduccion" sap:VirtualizedContainerService.HintSize="727,3680" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -302,7 +301,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Traduce Type" EmptyField="True" sap:VirtualizedContainerService.HintSize="565,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_Type]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayMS="1500" DisplayName="Traduce Type" EmptyField="True" sap:VirtualizedContainerService.HintSize="565,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_Type]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2c973fc-81e1-4128-89ce-73ab51e0b04e" InformativeScreenshot="927241c76d531d26104456d5402f7527" Selector="&lt;html app='chrome.exe' title='google translate - Buscar con Google' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;">
                 <ui:Target.TimeoutMS>
@@ -329,7 +328,7 @@
               <OutArgument x:TypeArguments="x:String">[out_Type]</OutArgument>
             </ui:GetValue.Value>
           </ui:GetValue>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Traduce Desciption" EmptyField="True" sap:VirtualizedContainerService.HintSize="565,135" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[in_Description]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayMS="1000" DisplayName="Traduce Desciption" EmptyField="True" sap:VirtualizedContainerService.HintSize="565,135" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[in_Description]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2c973fc-81e1-4128-89ce-73ab51e0b04e" InformativeScreenshot="927241c76d531d26104456d5402f7527" Selector="&lt;html app='chrome.exe' title='google translate - Buscar con Google' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;">
                 <ui:Target.TimeoutMS>
